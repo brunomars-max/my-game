@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cfff3rqbue0v1"
+path="res://.godot/imported/Lukrembo - Bread (freetouse.com).mp3-b54cde927522b5f3d5b1ca36b3a05cc6.mp3str"
+
+[deps]
+
+source_file="res://sound asset/Lukrembo - Bread (freetouse.com).mp3"
+dest_files=["res://.godot/imported/Lukrembo - Bread (freetouse.com).mp3-b54cde927522b5f3d5b1ca36b3a05cc6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
