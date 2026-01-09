@@ -1,85 +1,52 @@
-[gd_scene load_steps=20 format=3 uid="uid://pie2un78ua42"]
+[gd_scene load_steps=9 format=3 uid="uid://pie2un78ua42"]
 
 [ext_resource type="Script" uid="uid://yq568vgd21ti" path="res://Scripts/player.gd" id="1_4ja17"]
-[ext_resource type="Texture2D" uid="uid://c17i1xtfemh27" path="res://assets/SantaSprites/png/Idle (1).png" id="1_au0nh"]
-[ext_resource type="Texture2D" uid="uid://c8hd0gt3bysto" path="res://assets/SantaSprites/png/Idle (2).png" id="2_76bt2"]
-[ext_resource type="Texture2D" uid="uid://cttdgpfy2mq18" path="res://assets/SantaSprites/png/Idle (3).png" id="3_sxias"]
-[ext_resource type="Texture2D" uid="uid://c53h5ry37oj1k" path="res://assets/SantaSprites/png/Idle (4).png" id="4_ucfvk"]
-[ext_resource type="Texture2D" uid="uid://54mxtoj48h6o" path="res://assets/SantaSprites/png/Idle (5).png" id="5_2dyae"]
-[ext_resource type="Texture2D" uid="uid://dlpt7ok0i6rch" path="res://assets/SantaSprites/png/Idle (6).png" id="6_2u5n8"]
-[ext_resource type="Texture2D" uid="uid://bh3eyih0b68vt" path="res://assets/SantaSprites/png/Idle (7).png" id="7_73nau"]
-[ext_resource type="Texture2D" uid="uid://djjncat8qjqb8" path="res://assets/SantaSprites/png/Idle (8).png" id="8_skrk8"]
-[ext_resource type="Texture2D" uid="uid://bnwsp5oyotsak" path="res://assets/SantaSprites/png/Idle (9).png" id="9_ye16i"]
-[ext_resource type="Texture2D" uid="uid://ba2afeh8vyffw" path="res://assets/SantaSprites/png/Idle (10).png" id="10_75u2t"]
-[ext_resource type="Texture2D" uid="uid://bvirxcukj4tlk" path="res://assets/SantaSprites/png/Idle (11).png" id="11_7qa1u"]
-[ext_resource type="Texture2D" uid="uid://bowaaye6ftjsn" path="res://assets/SantaSprites/png/Idle (12).png" id="12_8gu1l"]
-[ext_resource type="Texture2D" uid="uid://dqhap1h553di8" path="res://assets/SantaSprites/png/Idle (13).png" id="13_jsgy1"]
-[ext_resource type="Texture2D" uid="uid://bplavac7ot71v" path="res://assets/SantaSprites/png/Idle (14).png" id="14_el80s"]
-[ext_resource type="Texture2D" uid="uid://dlpq00y1vg7n6" path="res://assets/SantaSprites/png/Idle (15).png" id="15_oxcm1"]
-[ext_resource type="Texture2D" uid="uid://d2dbujkc6ddqr" path="res://assets/SantaSprites/png/Idle (16).png" id="16_ltww1"]
+[ext_resource type="Texture2D" uid="uid://d30bn40841hpj" path="res://asser pack/sprites/knight.png" id="2_hjaqi"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rc5jl"]
-radius = 60.000008
-height = 160.00002
+radius = 40.000004
+height = 100.000015
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_3pfgh"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_fvtld"]
+atlas = ExtResource("2_hjaqi")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ct4mp"]
+atlas = ExtResource("2_hjaqi")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s4jxa"]
+atlas = ExtResource("2_hjaqi")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oh5ij"]
+atlas = ExtResource("2_hjaqi")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hp4bs"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_au0nh")
+"texture": SubResource("AtlasTexture_fvtld")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_76bt2")
+"texture": SubResource("AtlasTexture_ct4mp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_sxias")
+"texture": SubResource("AtlasTexture_s4jxa")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_ucfvk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_2dyae")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_2u5n8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_73nau")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_skrk8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_ye16i")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_75u2t")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_7qa1u")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_8gu1l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_jsgy1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_el80s")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_oxcm1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_ltww1")
+"texture": SubResource("AtlasTexture_oh5ij")
 }],
 "loop": true,
-"name": &"idle",
-"speed": 20.0
+"name": &"default",
+"speed": 10.0
 }]
 
 [node name="player" type="CharacterBody2D"]
+z_index = 5
 scale = Vector2(0.1, 0.1)
+collision_layer = 2
 script = ExtResource("1_4ja17")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -88,9 +55,8 @@ scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("CapsuleShape2D_rc5jl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(40, -110)
-scale = Vector2(0.33481658, 0.38416538)
-sprite_frames = SubResource("SpriteFrames_3pfgh")
-animation = &"idle"
-autoplay = "idle"
-frame_progress = 0.8294375
+position = Vector2(10.000015, -140)
+scale = Vector2(6.982, 6)
+sprite_frames = SubResource("SpriteFrames_hp4bs")
+autoplay = "default"
+frame_progress = 0.51996607

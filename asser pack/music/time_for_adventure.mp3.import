@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btka3v3y35b1o"
+path="res://.godot/imported/time_for_adventure.mp3-70372198f7bf0d8389beeb6f1a4e1c1a.mp3str"
+
+[deps]
+
+source_file="res://asser pack/music/time_for_adventure.mp3"
+dest_files=["res://.godot/imported/time_for_adventure.mp3-70372198f7bf0d8389beeb6f1a4e1c1a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
